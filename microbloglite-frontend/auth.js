@@ -2,7 +2,8 @@
 
 "use strict";
 
-const apiBaseURL = "http://localhost:5005";
+// const server = "http://localhost:5005/"
+const apiBaseURL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
 // Online server:   "http://microbloglite.us-east-2.elasticbeanstalk.com"
 
 // NOTE: API documentation is available at /docs 
@@ -32,7 +33,7 @@ function isLoggedIn () {
 // and feel free to re-use parts of it for other `fetch()` requests
 // you may need to write.
 function login (loginData) {
-    // POST /auth/login
+    // POST /auth/login***********************************************
     const options = { 
         method: "POST",
         headers: {
@@ -63,14 +64,14 @@ function login (loginData) {
 }
 
 
-// This is the `logout()` function you will use for any logout button
+// This is the `logout()` function you will use for any logout button*****************
 // which you may include in various pages in your app. Again, READ this
 // function and you will probably want to re-use parts of it for other
 // `fetch()` requests you may need to write.
 function logout () {
     const loginData = getLoginData();
 
-    // GET /auth/logout
+    // GET /auth/logout**************************************************
     const options = { 
         method: "GET",
         headers: { 
