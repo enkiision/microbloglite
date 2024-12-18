@@ -39,7 +39,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">The Waddlers</a>
+          <a class="navbar-brand" href="/microbloglite-frontend/html/index.html">The Waddle</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -54,18 +54,17 @@
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#"
+                <a class="nav-link active" href="/microbloglite-frontend/html/posts.html"
                   >Quacks
                   <span class="visually-hidden">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link" href="/microbloglite-frontend/html/profile_page.html">Profile</a>
               </li>
-              <!-- Move below to the the dropdown
               <li class="nav-item">
-                <a class="nav-link" href="#">User Registration / Logout</a>
-              </li> -->
+                <a class="nav-link" href="/microbloglite-frontend/html/create_posts.html">Create New Quack!</a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -77,14 +76,16 @@
                   >Dropdown W/ logout and user</a
                 >
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="/microbloglite-frontend/html/user_register.html">New User Registration</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
+
+                  <!-- This should lead to an automatic link to log out the user once clicked -->
+
+                  <a class="dropdown-item" href="#">Logout</a>
                 </div>
+                  <!-- This should lead to an automatic link to log out the user once clicked -->
               </li>
-            </ul>
+             </ul>
             <form class="d-flex" id="userRegister">
               <input class="form-control me-sm-2" type="search" placeholder="Search" />
               <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -95,14 +96,14 @@
       <!-- <h1>User Registration</h1> -->
     </header>
     <main>
-      <form class="card" id="user_register">
-        <div>
-          <label for="firstName">First Name</label>
+      <form class="card" id="user_register" onsubmit="createProfile(event)">
+        <!-- <div> -->
+          <!-- <label for="firstName">First Name</label>
           <input type="text" name="firstName" id="firstName" minlength="3" />
-        </div>
+        </div> -->
         <div>
-          <label for="lastName">Last Name</label>
-          <input type="text" name="lastName" id="lastName" minlength="3" />
+          <label for="fullName">Full Name</label>
+          <input type="text" name="lastName" id="fullName" minlength="3" />
         </div>
         <div>
           <label for="username">Username</label>
@@ -112,11 +113,10 @@
           <label for="password">Password</label>
           <input type="password" name="password" id="password" minlength="6" />
         </div>
-        <div>
-          <label for="cPassword">Confirm Password</label>
+        <!-- <div> -->
+          <!-- <label for="cPassword">Confirm Password</label>
           <input type="password" name="cPassword" id="cPassword" minlength="6" />
-        </div>
-
+        </div> -->
         <button id="loginButton" type="submit" class="btn-primary">Submit</button>
       </form>
       <!-- STRETCH GOAL add a pop up welcoming the new user to The Waddlers-->

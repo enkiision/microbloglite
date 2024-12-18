@@ -20,19 +20,19 @@
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="posts.css">
 
-    <title>/ Display POSTS</title>
+    <title>/CREATE POSTS</title>
 
     <!-- Run BEFORE page is finished loading (before window.onload): -->
     <script src="auth.js"></script>
     <script>
         // If the user is NOT logged in, redirect back to the landing page (index.html)
-        if (isLoggedIn() === false) window.location.replace("/");
+        if (isLoggedIn() === false) window.location.replace("index.html");
     </script>
 </head>
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary pt-4" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="/microbloglite-frontend/html/index.html">The Waddle</a>
               <button
@@ -68,7 +68,7 @@
                       role="button"
                       aria-haspopup="true"
                       aria-expanded="false"
-                      >Dropdown W/ + logout + user</a
+                      >Dropdown W/ logout and user</a
                     >
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="/microbloglite-frontend/html/user_register.html">New User Registration</a>
@@ -79,8 +79,8 @@
                       <a class="dropdown-item" href="#">Logout</a>
                     </div>
                       <!-- This should lead to an automatic link to log out the user once clicked -->
-                  </li>                
-                  </ul>
+                  </li>
+                </ul>
                 <form class="d-flex" id="userRegister">
                   <input class="form-control me-sm-2" type="search" placeholder="Search" />
                   <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -88,28 +88,31 @@
               </div>
             </div>
           </nav>
-        <h1>Display all POSTS HERE</h1>
+        <h1>CREATE POSTS PAGE</h1>
     </header>
 
-    <main >
+    <main>
+      <main >
         <div>
             <form action="post_quack" method="post">
-                <h2 class="text-success">Quacks</h2>
+                <h2>Quack</h2>
 
-                  <!-- <label id="username">username:</label><br>
+                  <label id="username">username:</label><br>
                   <input type="text" id="inputUsername" name="username" value="username"><br> 
-                   we want the value to populate the username that is currently signed in -->
-                  <!-- <label id="textbox">Quack:</label><br>
+                  <!-- we want the value to populate the username that is currently signed in -->
+                  <label id="textbox">Quack:</label><br>
                   <input type="text" id="quack" name="quack" value="quack"><br><br>
-                  we want the value to populate the username that is currently signed in -->
-                 <!-- <button type="submit" class="btn btn-danger value=">Post Quack</button> --> 
-              <p>We want to display multiple posts use post man for methods".</p></form>
+                 <!-- we want the value to populate the username that is currently signed in -->
+                 <button type="submit" class="btn btn-danger value=">Post Quack</button>
+
+                
+        <p>If you click the "Post Quack" button, the form-data should be sent to a page called "/action_page.php".</p></form>
         </div>
     </main>
 
     <footer></footer>
 
     <!-- Page-specific code -->
-    <script src="posts.js"></script>
+    <script src="create_posts.html"></script>
 </body>
 </html>
