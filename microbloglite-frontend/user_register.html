@@ -1,4 +1,3 @@
-<!-- User Registration -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,8 +19,8 @@
     ></script>
 
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="/microbloglite-frontend/css/global.css" />
-    <link rel="stylesheet" href="/microbloglite-frontend/css/bootstrap_solar_min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="bootstrap_solar_min.css" />
 
     <!-- Page-specific CSS -->
     <!-- <link rel="stylesheet" href="posts.css"> -->
@@ -29,7 +28,7 @@
     <title>User Registration</title>
 
     <!-- Run BEFORE page is finished loading (before window.onload): -->
-    <script src="/microbloglite-frontend/auth.js"></script>
+    <script src="auth.js"></script>
     <script>
       // If the user is NOT logged in, redirect back to the landing page (index.html)
       if (isLoggedIn() === false) window.location.replace("index.html");
@@ -39,7 +38,7 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/microbloglite-frontend/html/index.html">The Waddle</a>
+          <a class="navbar-brand" href="index.html">The Waddle</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -54,16 +53,16 @@
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="/microbloglite-frontend/html/posts.html"
+                <a class="nav-link active" href="posts.html"
                   >Quacks
                   <span class="visually-hidden">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/microbloglite-frontend/html/profile_page.html">Profile</a>
+                <a class="nav-link" href="profile_page.html">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/microbloglite-frontend/html/create_posts.html">Create New Quack!</a>
+                <a class="nav-link" href="create_posts.html">Create New Quack!</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -76,7 +75,7 @@
                   >Dropdown W/ logout and user</a
                 >
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="/microbloglite-frontend/html/user_register.html">New User Registration</a>
+                  <a class="dropdown-item" href="user_register.html">New User Registration</a>
                   <div class="dropdown-divider"></div>
 
                   <!-- This should lead to an automatic link to log out the user once clicked -->
@@ -125,7 +124,7 @@
     <footer>&copy;Enkiivision</footer>
 
     <!-- Page-specific code -->
-    <script src="/microbloglite-frontend/scripts/user_register.js"></script>
+    <script src="user_register.js"></script>
   </body>
 </html>
 
