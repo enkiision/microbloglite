@@ -95,6 +95,13 @@
         <div>
             <form action="post_quack" method="post">
                 <h2 class="text-success">Quacks</h2>
+                <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Quack Title</h5> <!--${post.title}-->
+                      <p class="card-text">Quack Content</p> <!--${post.content}-->
+                      <p class="text-muted">By username<!--${post.username}-->
+                  </div>
+              </div>
 
                   <!-- <label id="username">username:</label><br>
                   <input type="text" id="inputUsername" name="username" value="username"><br> 
@@ -103,13 +110,13 @@
                   <input type="text" id="quack" name="quack" value="quack"><br><br>
                   we want the value to populate the username that is currently signed in -->
                  <!-- <button type="submit" class="btn btn-danger value=">Post Quack</button> --> 
-              <p>We want to display multiple posts use post man for methods".</p></form>
+              <p>We want to display multiple posts use post man GET methods".</p></form>
         </div>
     </main>
 
     <footer></footer>
 
     <!-- Page-specific code -->
-    <script src="posts.js"></script>
+    <script src="/microbloglite-frontend/scripts/posts.js"></script>
 </body>
 </html>
