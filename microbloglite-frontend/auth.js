@@ -68,6 +68,7 @@ function login (loginData) {
 // which you may include in various pages in your app. Again, READ this
 // function and you will probably want to re-use parts of it for other
 // `fetch()` requests you may need to write.
+
 function logout () {
     const loginData = getLoginData();
 
@@ -92,6 +93,6 @@ function logout () {
             // error with the fetch request above.
 
             window.localStorage.removeItem("login-data");  // remove login data from LocalStorage
-            window.location.assign("/");  // redirect back to landing page (index.html)
+            window.location.assign("index.html");  // redirect back to landing page (index.html)
         });
 }
