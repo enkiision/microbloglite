@@ -127,31 +127,3 @@
     <script src="user_register.js"></script>
   </body>
 </html>
-
-<!-- from timothy
-
-async function makeProfile(event) {
-    event.preventDefault();
-    let signUpData = {
-      fullName: forms.fullName.value.trim(),
-      username: forms.usernameField.value.trim(),
-      email: forms.emailField.value.trim(),
-      password: forms.passwordField.value.trim(),
-      bio: forms.bio.value.trim(),
-    };
-  
-    try {
-      let promise = fetch("http://localhost:5005/api/users", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(signUpData),
-      });
-      let response = await promise;
-      let data = await response.json();
-      console.log(data);
-    } catch (error) {
-      console.error("Error code", error.message);
-    }
-  }  -->

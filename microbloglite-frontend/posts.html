@@ -31,7 +31,7 @@
     <script src="auth.js"></script>
     <script>
       // If the user is NOT logged in, redirect back to the landing page (index.html)
-      if (isLoggedIn() === false) window.location.replace("index,html");
+      if (isLoggedIn() === false) window.location.replace("index.html");
     </script>
   </head>
   <body>
@@ -79,7 +79,6 @@
                   <div class="dropdown-divider"></div>
 
                   <!-- This should lead to an automatic link to log out the user once clicked -->
-
                   <a class="dropdown-item" href="#">Logout</a>
                 </div>
                 <!-- This should lead to an automatic link to log out the user once clicked -->
@@ -94,18 +93,15 @@
       </nav>
       <h1>Display all POSTS HERE</h1>
     </header>
-
     <main>
-      <div>
+      <div id="posts-container">
         <form>
           <h2 class="text-success">Quacks</h2>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Quack Title</h5>
-              <!--${post.title}-->
-              <p class="card-text">Quack Content</p>
-              <!--${post.content}-->
-              <p class="text-muted">By username<!--${post.username}--></p>
+              <p class="card-text">text</p>
+              <p class="text-muted">username</p>
+              <p class="text-muted">createdAt</p>
             </div>
           </div>
 
