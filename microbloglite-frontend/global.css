@@ -84,3 +84,17 @@ body {
 :root {
     font-size: 1rem;
 }
+
+.icon {
+    width: 200px;  
+    height: auto;
+    vertical-align: right; 
+    margin-left: 350px; 
+  }
+
+  .icon2 {
+    width: 200px;  
+    height: auto;
+    vertical-align:middle; 
+    margin: 20px auto; 
+  }
