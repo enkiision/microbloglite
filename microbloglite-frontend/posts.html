@@ -59,7 +59,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="profile_page.html">Profile</a>
+                <a class="nav-link" href="profile.html">Profile</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="create_posts.html">Create New Quack!</a>
@@ -77,11 +77,9 @@
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="user_register.html">New User Registration</a>
                   <div class="dropdown-divider"></div>
-
-                  <!-- This should lead to an automatic link to log out the user once clicked -->
+                  
                   <a class="dropdown-item" onclick="logout()" href="#">Logout</a>               
                  </div>
-                <!-- This should lead to an automatic link to log out the user once clicked -->
               </li>
             </ul>
             <form class="d-flex" id="userRegister">
@@ -97,6 +95,7 @@
       <div id="posts-container">
         <form>
           <h2 class="text-success">Quacks</h2>
+          <div id="postsContainer"></div>
           <div class="card">
             <div class="card-body">
               <p class="card-text">text</p>
