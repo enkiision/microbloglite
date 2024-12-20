@@ -1,5 +1,5 @@
 "use strict"
-
+// this page isnt complete yet with poplating the bio but it does populate the username and full name.|| it does populate the bio for my specific account but I was in a frenzy doing this and I can'r remember why.
   //receive data from local storage
 function getLoginData(){
   const loginData = localStorage.getItem("login-data");

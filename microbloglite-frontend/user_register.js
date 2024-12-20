@@ -1,19 +1,4 @@
 "use strict";
-//For response to client when the requirements arent fufilled
-
-//     .then((response) => {
-//       if (response.ok) {
-//         alert("User registered successfully!");
-//         // Redirect to the posts.html page
-//         window.location.href = "posts.html";
-//       } else if (response.status === 403) {
-//         alert("Username already in use. Please try another!");
-//       } else {
-//         throw new Error("Failed to register user");
-//       }
-//     })
-//     .catch((error) => console.error("Error:", error));
-// });
 
 async function createProfile(event) {
     event.preventDefault()
@@ -21,7 +6,7 @@ async function createProfile(event) {
   const fullName = document.getElementById("fullName").value.trim();
   const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value;
-  // const cPassword = document.getElementById("cPassword").value;
+  // const cPassword = document.getElementById("cPassword").value; I wanted to add a confirm password field but I needed to make more time
   let signUp = {
     fullName: fullName,
     username: username,
